@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 80px;
+}
+
+header {
+    position: relative;
+    background-image: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+header .name {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header .Ville, header .mail, header h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+header .mail {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+header .mail:hover {
+    text-decoration: underline;
+}
+
+.navhead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(77, 77, 193, 0.9); /* Fond semi-transparent */
+    padding: 15px 0;
+    z-index: 2;
+}
+
+.navhead dl {
+    display: flex;
+    justify-content: center;
+}
+
+.navhead dd {
+    margin: 0 15px;
+}
+
+.navhead a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navhead a:hover {
+    background-color: #ffd700;
+    color: black;
+}
+
+/* Sections */
+.Sect {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+}
+
+.Comp, .Experience, .Form, .Int {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 24%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.Comp h3, .Experience h3, .Form h3, .Int h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #4d4dc1;
+}
+
+.CompList, .ExpList, .FormList, .IntList {
+    list-style: none;
+}
+
+.CompList li, .ExpList li, .FormList li, .IntList li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+.Foot {
+    background-color: #4d4dc1;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+.Foot .Linkedin {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.credit {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .Sect {
+        flex-direction: column;
+    }
+
+    .Comp, .Experience, .Form, .Int {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header .name {
+        font-size: 2em;
+    }
+
+    header .Ville, header .mail, header h3 {
+        font-size: 1em;
+    }
+
+    .navhead dl {
+        flex-direction: column;
+    }
+
+    .navhead dd {
+        margin-bottom: 10px;
+    }
+}
